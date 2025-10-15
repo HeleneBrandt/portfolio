@@ -3,19 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Fullstack Utvikler</title>
+    <title>Helene Rebekka Brandtzæg </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 <header>
-    <h1>Fullstack Utvikler Portfolio</h1>
-    <nav>
-        <a href="#about">Om meg</a>
-        <a href="#projects">Prosjekter</a>
-        <a href="#skills">Kompetanse</a>
-        <a href="#contact">Kontakt</a>
+    <nav class="navbar">
+
+        <div class="nav-section nav-left">
+        <ul class="nav-links">
+            <li><a href="#projects">PROJECT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+        </div>
+
+        <div class="logo">H</div>
+
+        <div class="nav-section nav-right">
+            <ul class="nav-links">
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Helene Rebekka Brandtzæg</h1>
+        <h2> Fullstack Developer </h2>
+        <p>
+            Building modern web applications with passion and precision.
+            Transforming ideas into elegant, scalable solutions.
+        </p>
+        <a href="#projects" class="hero-btn">Utforsk prosjekter</a>
+    </div>
+</section>
 
 <section id="about">
     <h2>Om meg</h2>
@@ -36,12 +61,22 @@
     <ul id="skills-list"></ul>
 </section>
 
+
 <section id="contact">
     <h2>Kontakt</h2>
-    <p>Email: helenebrandtzaeg@outlook.com</p>
-    <p>Telefon: +47 478 278 60</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/ditt-navn</a></p>
-    <p>GitHub: <a href="#">github.com/ditt-navn</a></p>
+    <p><i class="bi bi-envelope-at-fill"></i>
+        <a href="mailto:helenebrandtzaeg@outlook.com">helenebrandtzaeg@outlook.com</a>
+    </p>
+
+    <p><i class="bi bi-telephone-fill"></i> +47 478 278 60</p>
+
+    <p><i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/helene-rebekka-brandtz%C3%A6g-7b470a112/" target="_blank">LinkedIn</a>
+    </p>
+
+    <p><i class="bi bi-github"></i>
+        <a href="https://github.com/HeleneBrandt" target="_blank">GitHub</a>
+    </p>
 </section>
 
 <script src="script.js"></script>
