@@ -68,57 +68,22 @@ header nav a {
 }
 
 /* ====== HERO ====== */
-.hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #d9bfb9, #e6ccc7);
-  overflow: hidden;
-}
-
-/* ===== HERO-INNHOLD ===== */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 56px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.hero-btn {
-  text-decoration: none;
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
   color: #000;
-  border: 1px solid #000;
-  padding: 12px 28px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #d9bfb9, #e6ccc7);
+  position: relative;
 }
 
-.hero-btn:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-/* ===== BOBLER ===== */
+/* ===== BOBLEBAKGRUNN ===== */
 .bubbles {
-  position: absolute;
+  position: fixed; /* dekker hele skjermen uansett scroll */
   inset: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0; /* bak alt innhold */
+  pointer-events: none; /* gjør at man fortsatt kan klikke på knapper */
 }
 
 .bubble {
@@ -129,7 +94,7 @@ header nav a {
   opacity: 0.6;
 }
 
-/* forskjellige størrelser, farger og forsinkelser */
+/* forskjellige bobler */
 .bubble:nth-child(1) {
   width: 250px; height: 250px;
   top: 20%; left: 10%;
@@ -149,23 +114,8 @@ header nav a {
   animation-delay: 10s;
 }
 .bubble:nth-child(4) {
-  width: 350px; height: 350px;
-  top: 10%; left: 80%;
-  background: radial-gradient(circle, rgba(210,180,255,0.4), transparent 70%);
-  animation-delay: 15s;
-}
-.bubble:nth-child(5) {
-  width: 150px; height: 150px;
-  top: 80%; left: 30%;
-  background: radial-gradient(circle, rgba(255,180,220,0.4), transparent 70%);
-  animation-delay: 8s;
-}
+  width: 350px; height
 
-/* ANIMASJON */
-@keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%      { transform: translate(60px, -80px) scale(1.2); }
-}
 #contact i {
     color: #492845;
     margin-right: 8px;
