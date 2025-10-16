@@ -1,25 +1,30 @@
+/* ===== GLOBALT ===== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fbf9f9;
+    font-family: 'Inter', Arial, sans-serif;
+    color: rgb(2, 11, 37);
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: rgba(217, 191, 185, 0.4);
 }
 
-.navbar{
+/* ===== NAVBAR ===== */
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     position: relative;
+    z-index: 3; /* over boblene */
 }
 
-.nav-section{
+.nav-section {
     display: flex;
     gap: 40px;
 }
-
 
 .nav-links {
     list-style: none;
@@ -47,18 +52,19 @@ body {
     right: 40px;
 }
 
-
 .logo {
     font-size: 18px;
     font-weight: bold;
     color: #000;
 }
 
+/* ===== HEADER ===== */
 header {
-    background-color: #d9bfb9;
+    background-color: rgba(217, 191, 185, 0.4);
     color: rgb(2, 11, 37);
     padding: 20px;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 header nav a {
@@ -67,61 +73,111 @@ header nav a {
     text-decoration: none;
 }
 
-/* ====== HERO ====== */
-body {
-  margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  color: #000;
-  overflow-x: hidden;
-  background: linear-gradient(135deg, #d9bfb9, #e6ccc7);
-  position: relative;
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   /* background: linear-gradient(135deg, #d9bfb9, #e6ccc7); */
+    overflow: hidden;
+    z-index: 2; /* over boblene */
 }
 
-/* ===== BOBLEBAKGRUNN ===== */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ===== BOBLER ===== */
 .bubbles {
-  position: fixed; /* dekker hele skjermen uansett scroll */
-  inset: 0;
-  overflow: hidden;
-  z-index: 0; /* bak alt innhold */
-  pointer-events: none; /* gjør at man fortsatt kan klikke på knapper */
+    position: fixed;         /* dekker hele siden */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;              /* ligger helt bakerst */
+    overflow: hidden;
+    pointer-events: none;    /* ikke blokker klikk */
 }
 
 .bubble {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,0.5), transparent 70%);
-  animation: float 20s ease-in-out infinite;
-  opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.5), transparent 70%);
+    animation: float 20s ease-in-out infinite;
+    opacity: 0.6;
+    filter: blur(40px); /* dreamy effekt */
 }
 
-/* forskjellige bobler */
+/* forskjellige størrelser, farger og forsinkelser */
 .bubble:nth-child(1) {
-  width: 250px; height: 250px;
-  top: 20%; left: 10%;
-  background: radial-gradient(circle, rgba(255,200,200,0.4), transparent 70%);
-  animation-delay: 0s;
+    width: 400px; height: 400px;
+    top: 10%; left: 15%;
+    background: radial-gradient(circle, rgba(255,200,200,0.4), transparent 70%);
+    animation-delay: 0s;
 }
 .bubble:nth-child(2) {
-  width: 300px; height: 300px;
-  top: 60%; left: 70%;
-  background: radial-gradient(circle, rgba(180,220,255,0.4), transparent 70%);
-  animation-delay: 5s;
+    width: 500px; height: 500px;
+    top: 60%; left: 70%;
+    background: radial-gradient(circle, rgba(180,220,255,0.4), transparent 70%);
+    animation-delay: 5s;
 }
 .bubble:nth-child(3) {
-  width: 200px; height: 200px;
-  top: 40%; left: 40%;
-  background: radial-gradient(circle, rgba(255,230,180,0.4), transparent 70%);
-  animation-delay: 10s;
+    width: 350px; height: 350px;
+    top: 40%; left: 40%;
+    background: radial-gradient(circle, rgba(255,230,180,0.4), transparent 70%);
+    animation-delay: 10s;
 }
 .bubble:nth-child(4) {
-  width: 350px; height
-
-#contact i {
-    color: #492845;
-    margin-right: 8px;
-    font-size: 1.2em;
+    width: 450px; height: 450px;
+    top: 20%; left: 80%;
+    background: radial-gradient(circle, rgba(210,180,255,0.4), transparent 70%);
+    animation-delay: 15s;
+}
+.bubble:nth-child(5) {
+    width: 300px; height: 300px;
+    top: 80%; left: 25%;
+    background: radial-gradient(circle, rgba(255,180,220,0.4), transparent 70%);
+    animation-delay: 20s;
 }
 
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%      { transform: translate(80px, -60px) scale(1.3); }
+}
+
+/* ===== VIDEO ===== */
 .video-container {
     position: relative;
     width: 80%;
@@ -140,6 +196,14 @@ body {
     height: 100%;
     border: none;
 }
+
+/* ===== CONTACT ===== */
+#contact i {
+    color: #492845;
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
 #contact a {
     color: #27b4e3;
     text-decoration: none;
@@ -149,12 +213,16 @@ body {
     color: #282c34;
 }
 
+/* ===== SECTIONER ===== */
 section {
+    position: relative;
+    z-index: 2; /* over boblene */
     padding: 50px;
     max-width: 800px;
     margin: auto;
 }
 
+/* ===== PROJECTS ===== */
 #projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -168,6 +236,7 @@ section {
     flex: 1 1 250px;
 }
 
+/* ===== SKILLS ===== */
 #skills-list {
     display: flex;
     flex-wrap: wrap;
