@@ -31,26 +31,6 @@ body {
     z-index: 3; /* over boblene */
 }
 
-.nav-section {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 40px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 
 .nav-left {
     position: absolute;
