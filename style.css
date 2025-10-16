@@ -53,9 +53,8 @@ body {
 }
 
 .logoen {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
+    position: relative; /* sikrer at den ligger over carouselen */
+    z-index: 5; /* høyere enn carousel */
 }
 
 /* ===== HEADER ===== */
