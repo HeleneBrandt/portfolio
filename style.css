@@ -10,18 +10,19 @@ body {
     background-color: rgba(217, 191, 185, 0.4);
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* venstre, midt, høyre */
     align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 40px;
+    background-color: rgba(217, 191, 185, 0.4);
     position: relative;
-    z-index: 3; /* over boblene */
+    z-index: 3;
 }
 
-.nav-section {
+.nav-left,
+.nav-right {
     display: flex;
     gap: 40px;
 }
@@ -42,21 +43,13 @@ body {
     font-weight: 500;
 }
 
-.nav-left {
-    position: absolute;
-    left: 40px;
-}
-
-.nav-right {
-    position: absolute;
-    right: 40px;
-}
-
 .logo {
     font-size: 18px;
     font-weight: bold;
     color: #000;
+    text-align: center;
 }
+
 
 /* ===== HEADER ===== */
 header {
