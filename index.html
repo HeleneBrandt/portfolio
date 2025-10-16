@@ -6,9 +6,14 @@
     <title>Helene Rebekka Brandtzæg </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
+    <!-- Bootstrap JS Bundle (inkluderer Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <div class="bubbles">
     <div class="bubble"></div>
     <div class="bubble"></div>
@@ -64,6 +69,31 @@
 <section id="projects">
     <h2>Prosjekter</h2>
     <div id="projects-container"></div>
+
+    <!-- CAROUSEL -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="StudyBuddypro.png" class="d-block w-100" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img src="IoTpro.png" class="d-block w-100" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img src="weatherapp.png" class="d-block w-100" alt="Third slide">
+    </div>
+  </div>
+  
+  <!-- Valgfri navigasjon -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Forrige</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Neste</span>
+  </button>
+</div>
 
     <h2>Menneske Maskin Interaksjon </h2>
     <p> I emnet Menneske Maskin Interaksjon utviklet jeg en løsning på en
