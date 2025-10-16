@@ -12,21 +12,13 @@ body {
 
 /* ===== NAVBAR ===== */
 
-/*.navbar {
+* ===== NAVBAR ===== */
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 3; /* over boblene */
-}
-*/
-.navbar {
-    display: flex;
-    justify-content: center; /* holder logoen i midten */
-    align-items: center;
-    padding: 15px 0;
     position: relative;
     z-index: 3; /* over boblene */
 }
@@ -66,7 +58,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #000;
-    /* ligger automatisk midt når navbar bruker space-between */
 }
 
 /* ===== HEADER ===== */
