@@ -3,7 +3,7 @@ const projects = [
     {
         title: 'Study Buddy App',
         description: 'Mobilapp i React Native og Firebase for studenter.',
-        tools: 'React Native, Firebase, JavaScript, Figma'
+        tools: 'React,  JavaScript, Figma'
     },
     {
         title: 'IoT Weather Station',
@@ -31,7 +31,8 @@ projects.forEach(project => {
 });
 
 // Kompetanse
-const skills = ['Java', 'Kotlin', 'Python', 'C#', 'Spring Boot', 'Flask', 'React', 'React Native', 'HTML', 'CSS', 'JavaScript', 'SQL', 'Firebase', 'UI/UX Design', 'Agile/Scrum', 'Testing'];
+const skills = ['Java', 'Kotlin', 'Python', 'C#', 'Spring Boot', 'Flask', 'React', 'React Native', 'HTML', 'CSS', 'JavaScript', 'SQL', 
+                'UI/UX Design', 'Agile/Scrum', 'Testing'];
 
 const skillsList = document.getElementById('skills-list');
 skills.forEach(skill => {
