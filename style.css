@@ -243,46 +243,41 @@ section {
     border-radius: 4px;
 }
 
-.project-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    background: #f9f9f9;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    margin: 2rem 0;
-}
+.portfolio-item {
+        max-width: 800px; /* Begrenser bredden så det ikke strekker seg over hele skjermen */
+        margin: 40px auto; /* Sentrerer hele prosjektet */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center; /* Sentrerer tekst og video */
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 15px;
+        background-color: #fff;
+    }
 
-.project-content {
-    flex: 1;
-    min-width: 300px;
-}
+    .portfolio-item h2 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
 
-.project-content h2 {
-    font-family: 'Inter', sans-serif;
-    color: #2d3436;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
+    .portfolio-item p {
+        color: #666;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 25px auto; /* Sentrerer teksten og gir luft ned til videoen */
+    }
 
-.project-content p {
-    line-height: 1.6;
-    color: #636e72;
-}
+    .video-wrapper {
+        width: 100%;
+        max-width: 640px; /* Bestemmer maks størrelse på videoen */
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
 
-.video-container {
-    flex: 1;
-    min-width: 320px;
-    border-radius: 8px;
-    overflow: hidden;
-    line-height: 0; /* Fjerner lite gap under video */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.video-container video {
-    width: 100%; /* Gjør videoen responsiv */
-    height: auto;
-    display: block;
-}
+    .video-wrapper video {
+        width: 100%; /* Videoen fyller bredden av wrapperen */
+        height: auto;
+        display: block;
+    }
